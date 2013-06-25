@@ -1,0 +1,5 @@
+name: sagan
+mem: 256M
+framework:
+  runtime: java7
+app-dir: target
