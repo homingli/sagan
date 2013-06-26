@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <title>WebGL Globe</title>
+    <title>Aurora LIVE (WebGL Globe)</title>
     <meta charset="utf-8">
     <style type="text/css">
       html {
@@ -21,9 +21,9 @@
 		#space-weather {
 		 font-size: 11px;
         position: absolute;
-        top: 50px;
+        top: 150px;
         border-radius: 3px;
-        right: 10px;
+        left: 10px;
         padding: 10px;
 		}
       #twitfeed {
@@ -51,6 +51,7 @@
       }
 
       #currentInfo {
+        display: none;
         width: 270px;
         position: absolute;
         left: 20px;
@@ -168,6 +169,9 @@
 
 </div>
 <div id="twitfeed">
+  <a class="twitter-timeline" href="https://twitter.com/search?q=%23Aurora" data-widget-id="349990484522979328">Tweets about "#Aurora"</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script>
 new TWTR.Widget({
@@ -358,10 +362,6 @@ new TWTR.Widget({
 		
 	});
   }
-
-
-
-
 
 	</script>
 
