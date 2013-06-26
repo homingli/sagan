@@ -76,7 +76,8 @@ DAT.Globe = function(container, colorFn) {
 
   var overRenderer;
 
-  var imgDir = '/sagan/static/';
+  //var imgDir = '/sagan/static/';
+  var imgDir = '/static/';
 
   var curZoomSpeed = 0;
   var zoomSpeed = 50;
@@ -113,8 +114,7 @@ DAT.Globe = function(container, colorFn) {
     shader = Shaders['earth'];
     uniforms = THREE.UniformsUtils.clone(shader.uniforms);
 
-    uniforms['texture'].texture = THREE.ImageUtils.loadTexture(imgDir+'world' +
-        '.jpg');
+    uniforms['texture'].texture = THREE.ImageUtils.loadTexture(imgDir+'world.jpg');
 
     material = new THREE.MeshShaderMaterial({
 
